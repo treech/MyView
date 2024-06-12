@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorTrackTextView">
+        <attr name="color_text_view_origin_color" format="color" />
+        <attr name="color_text_view_change_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ColorProgressView">
+        <attr name="cpv_inner_color" format="color" />
+        <attr name="cpv_outer_color" format="color" />
+        <attr name="cpv_round_size" format="dimension" />
+        <attr name="cpv_text_color" format="color" />
+        <attr name="cpv_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StarCollectView">
+        <attr name="scv_star_normal" format="reference" />
+        <attr name="scv_star_select" format="reference" />
+        <attr name="scv_star_count" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SliderBarView">
+        <attr name="text_color_default" format="color" />
+        <attr name="text_color_focus" format="color" />
+        <attr name="text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundColorView">
+        <attr name="rcv_bg_color" format="color" />
+        <attr name="rcv_text_color" format="color" />
+        <attr name="rcv_text_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="menu_right_padding" format="dimension" />
+    </declare-styleable>
+</resources>

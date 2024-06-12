@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:text="back"
+        android:id="@+id/bt_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.example.myview.ui.view.MyTextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="hookTest"
+        android:text="click" />
+
+    <com.example.myview.ui.view.ColorTrackTextView
+        android:id="@+id/colorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="leftToRight"
+        android:text="LeftToRight" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rightToLeft"
+        android:text="rightToLeft" />
+
+    <com.example.myview.ui.view.ColorProgressView
+        android:id="@+id/colorProgressView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        app:cpv_inner_color="@color/blue"
+        app:cpv_outer_color="@color/red"
+        app:cpv_text_color="@color/black" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startSwipe"
+        android:text="startSwipe" />
+
+    <com.example.myview.ui.view.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="loadingView"
+        android:text="loadingView" />
+
+    <com.example.myview.ui.view.StarCollectView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:scv_star_count="5"
+        app:scv_star_normal="@drawable/ic_collect_default"
+        app:scv_star_select="@drawable/ic_collect_select" />
+
+    <!--    <com.example.myview.ui.view.SliderBarView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent" />-->
+</LinearLayout>
