@@ -79,11 +79,13 @@ class CustomDragView @JvmOverloads constructor(
     }
 
     override fun onInterceptTouchEvent(ev: MotionEvent): Boolean {
+        //一旦菜单打开全部拦截不给listview处理
         if (mIsMenuOpen) {
             return true
         }
         when (ev.action) {
             MotionEvent.ACTION_DOWN -> {
+                //down事件传递给ViewDragHelper
                 mVH.processTouchEvent(ev)
                 mDownY = ev.y
             }
@@ -96,6 +98,7 @@ class CustomDragView @JvmOverloads constructor(
                 }
             }
         }
+        //事件分发给child
         return super.onInterceptTouchEvent(ev)
     }
 
