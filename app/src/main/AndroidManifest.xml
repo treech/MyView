@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MyView"
         tools:targetApi="31">
         <activity
-            android:name=".ui.HBLevelActivity"
+            android:name=".ui.RotateTextActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyView">
